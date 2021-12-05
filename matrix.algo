@@ -1,0 +1,30 @@
+PROCEDURE dot_product(var arr1 : ARRAY_OF INTEGER[n], arr2: ARRAY_OF INTEGER[n])
+VAR
+    i, j : INTEGER ;
+    ps : INTEGER := 0;
+BEGIN
+    FOR i FROM 0 TO n-1 STEP step  DO
+        ps := ps + arr1[i] * arr2[i];
+    END_FOR
+    IF (ps = 0) THEN
+        Write("two vectors are orthogonal");
+    END_IF
+    Write(ps);
+END
+ALGORITHM Dot-product
+VAR
+ M : ARRAY_OF INTEGER[n][n];
+ index1 : ARRAY_OF INTEGER[];
+ index2 : ARRAY_OF INTEGER[];
+ i,j : INTEGER; 
+BEGIN
+    FOR i FROM 0 TO n-1 STEP step  DO
+        FOR j FROM 0 TO n-1 STEP step  DO
+            Read(M[i][j]);
+        END_FOR
+    END_FOR
+    v1 = M( : , index1);
+    v2 = M( : , index2);
+   dot_product(v1, v2);
+
+END
