@@ -1,4 +1,4 @@
-PROCEDURE dot_product(var arr1 : ARRAY_OF INTEGER[n], arr2: ARRAY_OF INTEGER[n])
+PROCEDURE dot_product(var arr1 : ARRAY_OF INTEGER[n], var arr2: ARRAY_OF INTEGER[n])
 VAR
     i, j : INTEGER ;
     ps : INTEGER := 0;
